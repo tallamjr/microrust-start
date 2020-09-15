@@ -1,6 +1,10 @@
+#![allow(unused_variables)]
 #![no_std]
-
-extern crate panic_halt;
+#![no_main]
 
 fn main() {
+#[no_mangle]
+pub extern "C" fn _start() -> ! {
+    loop {}
+}
 }
